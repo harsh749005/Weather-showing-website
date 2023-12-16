@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div class="weather-app" id="apb">
+        <div class="container">
+            <h3 class="name">London</h3>
+
+            <div class="city-time">
+
+                <div class="temp_cond"
+                style="display:flex;    
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;">
+
+                    <h1 class="temp" id="temp">16&#176;</h1>
+                    <div class="icon_cond" style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;"> 
+                    <img src="./weather/64x64/icons/day/113.png" alt="icon" id="icon" width="50" height="50">
+                        <span id="condition">Cloudy</span>
+                    </div>
+
+                </div>
+
+                <div class="time_day">
+                    <small>
+                        <span class="time">06:09</span>
+                        -
+                        <span class="mm">
+                            Monday Sep 19
+                        </span>
+                    </small>
+                </div>
+
+                <div class="weather">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="panes">
+            <form action="" class="locationInput">
+                <input type="text" class="search" placeholder="Search Location..." id="city" />
+                <button type="submit" class="submit" id="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            <ul class="cities">
+                <li class="city" id="dur">New York</li>
+                <li class="city">California</li>
+                <li class="city">Paris</li>
+                <li class="city">Tokyo</li>
+            </ul>
+            <ul class="details">
+                <h4>Weather Details</h4>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud">89%</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity">64%</span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="wind" id="demo">8km/hr</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="newscript.js"></script>
+</body>
+
+</html>
